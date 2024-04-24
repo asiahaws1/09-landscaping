@@ -1,0 +1,33 @@
+header, main {
+    max-width: 1240px;
+    margin: auto;
+}
+
+
+
+header {
+    grid-template-columns:  auto auto;
+    border-bottom: 1px solid #eee;
+}
+
+div.people {
+    section {
+        grid-template-columns: 200px auto;
+        column-gap: 8px;
+   
+     
+    } // end section
+} // end people
+
+div.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+// nav stuff
+nav ul li a {
+    font-size: .9rem;
+    padding: .5rem 1.2rem;
+}
+

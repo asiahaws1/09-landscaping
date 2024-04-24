@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Seasons Landscaping</title>
+  <meta name="description" content="Asia Haws' Start File with SCSS">
+  <meta name="author" content="Asia Haws">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="css/styles.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+  <!-- fav icon stuff -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body>
+
+  <div id="headerWrapper">
+    <header>
+      <img src="images/logo1x.png" alt="logo" width="140" height="50"
+        srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x">
+        <a href="tel:7192662837">1-719-266-2837</a>
+    </header>
+  </div> <!-- header wrapper -->
+
+  <div id="navWrapper">
+    <nav>
+      <button id="hamburgerBtn">&#9776;</button>
+      <ul id="primaryNav">
+      <li><a href="#">Services</a>
+      <li class="parent"><a href="#">Our Work</a>
+        <ul>
+          <li><a href="#">Lawns</a>
+          <li><a href="#">Concrete</a></li>
+          <li><a href="#">Firepits</a></li>
+        </ul>
+      </li>
+      <li class="parent"><a href="#">Locations</a>
+      <ul>
+        <li><a href="#">Utah</a>
+        <li class="active"><a href="#">Colorado</a></li>
+        <li><a href="#">Arizona</a></li>
+      </ul>
+      </li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+
+
+
+
+  <div id="mainWrapper">
+    <main>
+       <!-- Slider main container -->
+       <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="images/slider-small.jpg" media="(max-width:400px)">
+              <source srcset="images/slider-medium.jpg" media="(max-width:800px)">
+              <img src="images/slider-large.jpg" alt="sliderA" width="16" height="5">
+            </picture>
+          </div> <!-- end of one slide-->
+
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="images/slider2-small.jpg" media="(max-width:400px)">
+              <source srcset="images/slider2-medium.jpg" media="(max-width:800px)">
+              <img src="images/slider2-large.jpg" alt="sliderA" width="16" height="5">
+            </picture>
+          </div> <!-- end of one slide-->
+
+          <div class="swiper-slide">
+            <picture>
+              <source srcset="images/slider3-small.jpg" media="(max-width:400px)">
+              <source srcset="images/slider3-medium.jpg" media="(max-width:800px)">
+              <img src="images/slider3-large.jpg" alt="sliderA" width="16" height="5">
+            </picture>
+          </div> <!-- end of one slide-->
+
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+
+      <h1>Services</h1>
+
+      <div class="parent">
+        <section>
+          <h2>Concrete</h2>
+          <img src="images/concrete.webp" width="400" height="250" alt="yard">
+          <img src="images/burst.png" width="400" height="250" alt="mask">
+        </section>
+
+        <section>
+          <h2>Mulch</h2>
+          <img src="images/mulch.webp" width="400" height="250" alt="yard">
+          <img src="images/flower.png" width="400" height="250" alt="mask">
+        </section>
+
+        <section>
+          <h2>Lawns</h2>
+          <img src="images/yard.webp" width="400" height="250" alt="yard">
+          <img src="images/grass.png" width="400" height="267" alt="mask">
+        </section>
+
+        <section>
+          <h2>Gardens</h2>
+          <img src="images/garden.webp" width="400" height="250" alt="yard">
+          <img src="images/flower-row.png" width="400" height="161" alt="mask">
+        </section>
+      </div>
+
+
+
+     
+      <div class="people">
+        <section>
+          <img src="images/person1.jpeg" width="200" height="200" alt="person one">
+          <p>I used Seasons Landscaping for my yard because I wanted a complete transformation. These guys are the best. They had it done in a jiffy, from my lawn to my garden! I only use Seasons Landscaping.</p>
+        </section>
+        <section>
+          <img src="images/person2.jpeg" width="200" height="200" alt="person two">
+          <p>I had an idea for my yard, and it involved concrete and lawnwork. Seasons Landscaping is so knowledgeable and kind. They helped me map out and create my dream!</p>
+        </section>
+      </div>
+
+
+
+    </main>
+  </div>
+
+  <div id="footerWrapper">
+    <footer>
+
+
+
+      <p class="legal">&copy; <span id="year">X</span> &bull; Asia Haws</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/scripts.js" type="module"></script>
+</body>
+
+</html>

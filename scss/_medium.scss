@@ -1,0 +1,94 @@
+/* header */
+header {
+    grid-template-columns: 51px auto auto;
+    border-bottom: 1px solid #eee;
+}
+    
+#headerWrapper {
+    header{padding: 2rem $gutter;}
+    h1{font-size: 2rem;}
+}
+/* nav stuff */
+nav button{display:none;}
+
+nav {
+    background-color: $menuColor;
+    padding: 0 2rem;
+
+    ul {
+        display: flex;
+        margin-left: 2%;
+        border-left: 1px solid rgba(0,0,0,0.1); 
+       
+    }
+
+
+    ul li { border-right: 1px solid rgba(0,0,0,0.1);}
+
+    ul li a {
+        display: block;
+        font-size: 1rem;
+        padding: .9rem 1.2rem;
+        color: rgba(255,255,255,.9);
+        text-decoration: none;
+        transition: background 0.3s linear;
+
+    }
+    ul li a:hover {background: rgba(0,0,0,0.5);}
+
+    #primaryNav li.parent > a:after {
+        content: "\25BC";
+        font-size: .6rem;
+        color: rgba(255,255,255,0.5);
+        float: left;
+    }
+
+    ul li ul {
+        display: flex;
+        flex-direction: column;
+        background-color: darken($menuColor,5%);
+        border: none;
+        width: 14rem;
+        position: absolute;
+        left: -999rem;
+        z-index: 99;
+    } // child ul 
+
+    ul li ul li {
+        border-right: none;
+        border-top: solid 1px rgba(0,0,0,0.2);
+       
+    } // child li 
+
+    ul li:hover ul {
+        left: auto;
+        margin-left: 0;
+    }
+
+
+    li.active a {background-color: rgba(0,0,0,0.2);}
+} // end nav
+
+
+
+div.people {
+    section {
+        display: grid;
+        grid-template-columns: 140px auto;
+        column-gap: 4px;
+        padding: 16px;
+        
+        
+    } // end section
+} // end people
+
+div.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    padding: 10px;
+}
+
+     
+
+

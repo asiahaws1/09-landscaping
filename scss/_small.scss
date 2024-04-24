@@ -1,0 +1,150 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    height: 100%;
+}
+
+/*---- apply a natural box layout model to all elements -------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+
+header {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem $gutter;
+    gap: 8px;
+   
+   
+}
+
+header a {
+    
+  align-items: center;
+    
+    color: $menuColor;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+   
+}
+
+
+
+/* navigation stuff */
+
+
+#navWrapper nav {
+    ul {
+        list-style: none; // Removes bullet points
+        padding: 0;       // Removes padding, particularly on the left which is default for lists
+        margin: 0;        // Removes any default margins
+    }
+}
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+//main slogan
+#mainWrapper {
+    
+h1 { color: $menuColor;
+}
+
+h2 {
+    color: $menuColor;
+    font-weight: 300;
+}
+div.people {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    section {
+        padding: 7px;
+        img {
+            width:100%;
+            height: auto;
+            clip-path: circle(50% at 50% 50%);
+            transition: transform 1s;
+            &:hover {transform: rotate(15deg);}
+        }
+       
+    } // end section
+} // end people
+
+} // end main
+
+div.parent {
+    display: grid;
+    section {
+        position: relative;
+        
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        img:last-child{
+            position: absolute; 
+            bottom: 0;
+        }
+    }
+}
+
+
+.swiper, .swiper img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+// begin the footer
+#footerWrapper {
+    grid-row-start: 3;
+    background: $menuColor;
+    color: white;
+}
+footer {
+    padding: 0.5rem $gutter;
+    
+
+
+  
+       
+    p.legal {
+        margin: 0;
+        font-weight: $lightWeight;
+        text-align: center;
+    }
+}
